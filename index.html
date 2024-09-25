@@ -11,10 +11,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <header>
-    <nav class="navbar bg-black @include media-breakpoint-down(md)" {
-        .custom-class {
-          display: block;
-        }}>
+    <nav class="navbar bg-black @include media-breakpoint-down(md)" { .custom-class { display: block; }}>
         <div class="d-flex">
             <img class="m-2" src="img/duck.png" alt="Logo" width="65" height="65">
             <span class="navbar-text d-flex align-middle">
@@ -23,6 +20,10 @@
                 <div class="text-secondary p-2 m-2">Storico Prestito</div>
                 <div class="text-secondary p-2 m-2">Help</div>
             </span>
+            <form class="d-flex position-absolute end-0" role="search" >
+                <input class="form-control me-2" type="search" placeholder="Cerca.." aria-label="search">
+                <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
         </div>
     </nav>
 </header>
